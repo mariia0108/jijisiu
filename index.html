@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Feliz San Valentín 💘</title>
+<title>Feli San Valentín 💙</title>
+
 <style>
 body {
-  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
   text-align: center;
-  font-family: Arial, sans-serif;
   color: white;
-  padding-top: 100px;
+}
+
+.container {
+  animation: fadeIn 2s ease-in-out;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 45px;
+  margin-bottom: 20px;
 }
 
-button {
-  padding: 15px 25px;
-  font-size: 18px;
-  background-color: #ff4d6d;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  margin: 10px;
+p {
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
-button:hover {
-  background-color: #ff1e4d;
+img {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(255,255,255,0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 </style>
 </head>
 
 <body>
 
-<h1>¿Quieres ser mi San Valentín? 💖</h1>
-<p>Prometo risas, chocolates y muchos abrazos 🥰</p>
-
-<button onclick="alert('Sabía que dirías que sí 😌💘')">
-Sí 💕
-</button>
-
-<button onclick="alert('Intentemos otra vez 😏')">
-No 😜
-</button>
-
-</body>
-</html>
+<div class="container">
+  <h1>Feli San Valentín 💙</h1>
+  <p>me gustas muchitoo 🥹💘</p>
+  
+  <img src="ht
