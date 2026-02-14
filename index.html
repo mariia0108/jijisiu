@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Feli San Valentín chiii </title>
+<title>Feli San Valentínnnn🥰</title>
 
 <style>
 body {
   margin: 0;
-  padding: 0;
   height: 100vh;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
-  text-align: center;
   color: white;
-  overflow: hidden;
+  text-align: center;
 }
 
 .container {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 h1 {
@@ -27,52 +25,63 @@ h1 {
 }
 
 p {
-  font-size: 24px;
+  font-size: 26px;
 }
 
-img {
-  width: 220px;
-  margin: 20px 0;
-  border-radius: 20px;
-  box-shadow: 0px 0px 30px rgba(255,255,255,0.3);
+.question {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+.buttons {
+  margin-top: 25px;
 }
 
 button {
   padding: 12px 25px;
   font-size: 18px;
-  margin: 10px;
   border: none;
   border-radius: 25px;
+  margin: 10px;
   cursor: pointer;
-  background-color: #4da6ff;
+}
+
+.sipi {
+  background-color: #5dade2;
   color: white;
-  transition: 0.3s;
 }
 
-button:hover {
-  background-color: #1a8cff;
+.si {
+  background-color: #ff6b81;
+  color: white;
 }
 
-#mensaje {
-  margin-top: 20px;
-  font-size: 26px;
-  font-weight: bold;
+.result {
+  margin-top: 30px;
+  font-size: 30px;
 }
 
 .heart {
   font-size: 50px;
-  animation: latido 1s infinite;
+  animation: heartbeat 1s infinite;
 }
 
-@keyframes latido {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.3); }
-  100% { transform: scale(1); }
+img {
+  width: 220px;
+  margin-top: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255,255,255,0.3);
 }
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
 }
 </style>
 </head>
@@ -80,28 +89,31 @@ button:hover {
 <body>
 
 <div class="container">
-  <h1>Feli San Valentín 🥰🥰</h1>
+  <h1>Feli San Valentín 🥰🥰🥰</h1>
   <p>me gustas muchitoo ❣️😚</p>
 
-  <img src="https://i.pinimg.com/originals/b0/fc/69/b0fc69471f2c62d4754fe6cc6410c7b2.gif" alt="ositos">
+  <img src="ositos.gif" alt="ositos">
 
-  <h2>yo tmb te gusto o nop? 🧐</h2>
+  <div class="question">¿yo tmb te gusto o nop?</div>
 
-  <button onclick="respuestaSipi()">Sipi </button>
-  <button onclick="respuestaSi()">Siii </button>
+  <div class="buttons">
+    <button class="sipi" onclick="sipi()">Sipi 💙</button>
+    <button class="si" onclick="si()">Sip 💖</button>
+  </div>
 
-  <div id="mensaje"></div>
+  <div id="result" class="result"></div>
 </div>
 
 <script>
-function respuestaSipi() {
-  document.getElementById("mensaje").innerHTML = "chiiiiiiiiii 🙉";
+function sipi() {
+  document.getElementById("result").innerHTML = "chiiiiiiiiii 🙉";
 }
 
-function respuestaSi() {
-  document.getElementById("mensaje").innerHTML = "<div class='heart'>🙉🙉🙉</div>";
+function si() {
+  document.getElementById("result").innerHTML = "<span class='heart'>🙉🙉🙉🙉🙉</span>";
 }
 </script>
 
 </body>
 </html>
+
